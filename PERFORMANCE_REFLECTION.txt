@@ -1,0 +1,24 @@
+NTC CC105 - PERFORMANCE REFLECTION
+
+11. Random Access vs. Linear Search
+
+safeGetRecord executes in O(1) time because the array
+index directly identifies the location of the requested
+record.
+
+findStudentById uses linear search and may check every
+element in the array. Therefore, its worst-case time
+complexity is O(n).
+
+
+12. Deletion Cost
+
+Deleting a record from index 0 is more expensive because
+the elements after it must be shifted one position to the
+left.
+
+Deleting the last record is cheaper because no other
+elements need to be shifted.
+
+Therefore, deleting from the beginning can take O(n),
+while deleting the last element takes O(1).
